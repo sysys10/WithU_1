@@ -8,6 +8,8 @@ module.exports = {
     'react-native/no-raw-text': 'off',
     'react/react-in-jsx-scope': 'off',
     semi: 'off',
+    'react-hooks/exhaustive-deps': 'off',
+    // 'no-unused-vars': 'off',
   },
   parserOptions: {
     requireConfigFile: false,

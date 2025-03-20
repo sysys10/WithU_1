@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NMFClientId</key>
+	<string>r7l0jrxhap</string>
 	<key>UIAppFonts</key>
 	<array>
 		<!-- <string>Pretendard-Bold.otf</string>
@@ -9,6 +11,17 @@
 		<string>Pretendard-SemiBold.otf</string> -->
 		<string>Ionicons.ttf</string>
 	</array>
+	<dict>
+		<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+		<string>위치 정보를 확인하여 코스를 추천하기 위해 권한이 필요합니다</string>
+		<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+		<dict>
+			<key>NSLocationWhenInUseUsageDescription</key>
+			<string>위치 정보를 확인하여 코스를 추천하기 위해 권한이 필요합니다</string>
+		</dict>
+		<key>NSLocationWhenInUseUsageDescription</key>
+		<string>위치 정보를 확인하여 코스를 추천하기 위해 권한이 필요합니다</string>
+	</dict>	
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>사진첩에 접근하여 코스 이미지를 추가하기 위해 권한이 필요합니다</string>
 	<key>CFBundleURLTypes</key>
@@ -44,11 +57,20 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-		<!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
-		<key>NSAllowsArbitraryLoads</key>
-		<false/>
-		<key>NSAllowsLocalNetworking</key>
-		<true/>
+			<key>NSExceptionDomains</key>
+			<dict>
+					<key>3.37.88.164</key>
+					<dict>
+							<key>NSExceptionAllowsInsecureHTTPLoads</key>
+							<true/>
+							<key>NSIncludesSubdomains</key>
+							<true/>
+					</dict>
+			</dict>
+			<key>NSAllowsArbitraryLoads</key>
+			<false/>
+			<key>NSAllowsLocalNetworking</key>
+			<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>

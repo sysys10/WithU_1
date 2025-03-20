@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios --simulator='iPhone 16 Pro'",
+    "ios": "react-native run-ios --simulator='iPhone 16'",
     "lint": "eslint .",
-    "start": "react-native start",
+    "start": "react-native start --reset-cache",
     "test": "jest"
   },
   "dependencies": {
+    "@gorhom/bottom-sheet": "^5.1.2",
+    "@mj-studio/react-native-naver-map": "^2.2.0",
     "@react-native-seoul/kakao-login": "^5.4.1",
     "@react-native-vector-icons/common": "^11.0.0",
     "@react-native-vector-icons/ionicons": "^7.4.0",
@@ -23,10 +25,13 @@
     "react-native-gesture-handler": "^2.24.0",
     "react-native-image-picker": "^8.2.0",
     "react-native-mmkv": "^3.2.0",
+    "react-native-reanimated": "^3.17.1",
+    "react-native-reanimated-carousel": "^4.0.2",
     "react-native-safe-area-context": "^5.2.0",
     "react-native-screens": "^4.9.1",
     "react-native-splash-screen": "^3.3.0",
-    "react-native-webview": "^13.13.2"
+    "react-native-webview": "^13.13.2",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
